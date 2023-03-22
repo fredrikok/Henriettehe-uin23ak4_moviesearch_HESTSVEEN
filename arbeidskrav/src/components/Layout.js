@@ -1,16 +1,11 @@
-import { Link, Outlet } from "react-router-dom";
-
 export default function Layout(){
     return (
         <div id="container">
           <header>
-            <Link to="/">
-                <h1>Filmer</h1>
-            </Link>
-            
+                <h1>James Bond filmer:</h1>
           </header>
           <main>
-            <Outlet />
+           
           </main>
           <footer>
     

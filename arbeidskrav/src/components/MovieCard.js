@@ -6,6 +6,8 @@ export default function MovieCard ({title, img, category}){
         <article classname="movie-card">
             <img src={img} alt={title} />
             <h3>{title}</h3>
+            <p>{ingress}</p>
+            <a href="#">Les mer</a>
         </article>
     )
 }
