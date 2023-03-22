@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import './css/main.css';
 import Main from './components/Main';
 import { useEffect, useState } from 'react';
+import Layout from './components/Layout';
 
 function App() {
   const [movies, setMovies] = useState([])
@@ -11,7 +11,7 @@ function App() {
   
   const getMovies = async() => {
       const response = await fetch(`http://www.omdbapi.com/s=${filter}&type=movie&apikey=bed90b0b`)
-      const data = await response.json()
+      const resultat = await response.json()
       setMovies(data.Search)
   }
 
@@ -23,7 +23,10 @@ function App() {
 
 
   return (
-    <Main />
+    <>
+     <Layout />
+      <Main />
+    </>
   );
 }
 
