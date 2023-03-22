@@ -1,4 +1,4 @@
-export default function SearchResults(){
+export default function SearchResults{
     return (
         <>
         </>
