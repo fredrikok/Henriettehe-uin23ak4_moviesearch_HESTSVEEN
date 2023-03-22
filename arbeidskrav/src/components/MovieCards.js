@@ -1,4 +1,4 @@
-export default function MovieCards{
+export default function MovieCards(){
     return (
         
     )
