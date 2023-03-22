@@ -12,7 +12,7 @@ function App() {
   const getMovies = async() => {
       const response = await fetch(`http://www.omdbapi.com/s=${filter}&type=movie&apikey=bed90b0b`)
       const resultat = await response.json()
-      setMovies(data.Search)
+      setMovies(resultat.Search)
   }
 
   useEffect(() => {
