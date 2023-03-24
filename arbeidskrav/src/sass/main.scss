@@ -1,13 +1,17 @@
 @import "colors";
 
 body{
-   font-family: sans-serif;
-   max-width: 800px;
-   margin: 0 auto; 
-   background-color: $Teal;
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto; 
+    background-color: $Teal;
 
    * {
     box-sizing: border-box;
+   }
+
+   h1{
+    color: $Black;
    }
 
 }
