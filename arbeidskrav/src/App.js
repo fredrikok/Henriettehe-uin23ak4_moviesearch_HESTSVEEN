@@ -1,5 +1,4 @@
-import './App.css';
-import './css/main.css';
+import './sass/main.scss';
 //import { useEffect, useState } from 'react';
 import Layout from './components/Layout';
 import MovieCards from './components/MovieCards';
