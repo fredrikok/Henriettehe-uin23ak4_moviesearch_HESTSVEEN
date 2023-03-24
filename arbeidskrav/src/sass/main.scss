@@ -1,10 +1,12 @@
 @import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
 
 body{
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     max-width: 800px;
     margin: 0 auto; 
     background-color: $Teal;
+    line-height: 1;
 
    * {
     box-sizing: border-box;

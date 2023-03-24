@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Main from "./Main";
 
 export default function MovieCard({title, year, poster}){
 
