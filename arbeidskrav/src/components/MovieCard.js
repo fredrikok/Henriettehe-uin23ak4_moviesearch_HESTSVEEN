@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Main from "./Main";
 
-export default function MovieCard ({title, year, poster}){
+export default function MovieCard({title, year, poster}){
+
 return (
         <article classname="movie-card">
         <img src={poster} alt={title} />
@@ -11,4 +12,3 @@ return (
         </article>
     )
 }
-
