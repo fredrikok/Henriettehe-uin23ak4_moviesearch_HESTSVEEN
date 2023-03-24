@@ -1,9 +1,9 @@
 @import "colors";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+@import "~bootstrap/scss/bootstrap";
 
 body{
     font-family: 'Montserrat', sans-serif;
-    max-width: 800px;
     margin: 0 auto; 
     background-color: $Teal;
     line-height: 1;
@@ -12,8 +12,18 @@ body{
     box-sizing: border-box;
    }
 
-   h1{
-    color: $Black;
+    header{
+        background-color: $Light-teal;
+        display: flex;
+        width: 100%;
+
+        h1{
+            font-size: 10vh;
+            color: $Black;
+            padding: 2rem;
+        }
    }
+
+   
 
 }
