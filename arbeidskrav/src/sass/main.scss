@@ -4,11 +4,10 @@ body{
    font-family: sans-serif;
    max-width: 800px;
    margin: 0 auto; 
-   background-color: teal;
+   background-color: $Teal;
 
    * {
     box-sizing: border-box;
-    
    }
 
 }
