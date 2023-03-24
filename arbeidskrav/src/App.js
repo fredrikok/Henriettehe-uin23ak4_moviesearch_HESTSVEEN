@@ -6,7 +6,7 @@ import MovieCards from './components/MovieCards';
 function App() { 
   return (
     <>
-     <Layout>
+     <Layout >
       <MovieCards />
      </Layout>
     </>
