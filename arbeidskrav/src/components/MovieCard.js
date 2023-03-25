@@ -1,5 +1,4 @@
 
-
 export default function MovieCard({title, year, poster}){
 
 return (
