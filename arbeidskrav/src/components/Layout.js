@@ -5,16 +5,19 @@
 
 //<i class="bi bi-search"></i> - vil gjerne ha et forstørrelse glass til senere, fra Bootstrap for søkefeltet. 
 import React from "react";
+import MovieCards from "./MovieCards";
+import SearchResults from "./SearchResults";
 
 
-export default function Layout({children}){
+export default function Layout({children, setResultat, getMovies}){
     return (
         <>
          <header>
                 <h1>Filmer: </h1> 
+                <SearchResults setResultat={setResultat} getMovies={getMovies} />
           </header>
           <main className="content">
-                
+                <MovieCards setResultat={setResultat} />
                 {children}
           </main>
         </>

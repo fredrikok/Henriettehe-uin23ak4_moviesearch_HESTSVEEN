@@ -1,13 +1,21 @@
-import MovieCards from "./MovieCards";
+//Kilde handlesubmit: https://upmostly.com/tutorials/react-onchange-events-with-examples 
 
-export default function SearchResults(){
-
+export default function SearchResults({getMovies, setResultat}){
     
-    handleSubmit = {filter};
+    const handleSubmit = (event) => {
+        event.preventDefault()
+    }
+
+    const handleSearch = (event) => {
+        if(event.target.value > 2) {
+            setResultat(event.target.value)
+        }
+    }
 
     return (
-        //form - som går {handleSubmit}
-        <MovieCards />
-        //event.target
+        <form onSubmit={handleSubmit}>
+            <input type="search" placeholder="Søk dine filmer her.." onChange={handleSearch} />
+            <input type="submit" onClick={getMovies} value="Søk" />
+        </form>
     )
 }
