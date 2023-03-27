@@ -15,7 +15,15 @@ body{
     header{
         background-color: $Light-teal;
         display: flex;
-        width: 100%;
+
+        form{
+            width: 100%;
+            size: 30px;
+
+            input{
+                display: flex;
+            }
+        }
 
         h1{
             font-size: 10vh;
