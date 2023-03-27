@@ -9,7 +9,6 @@ return (
         <img src={Poster} alt={Title} />
         <h3>{Title}</h3>
         <p>{Year}{Plot}</p>
-        <a href="#">Les mer</a>
         </article>
         </Link>
         </>
