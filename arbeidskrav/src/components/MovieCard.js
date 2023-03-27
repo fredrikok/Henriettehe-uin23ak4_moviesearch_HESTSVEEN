@@ -1,27 +1,17 @@
-import { useState } from "react";
-import Main from "./Main";
+import { Link } from "react-router-dom";
 
-export default function MovieCard ({title, img, category}){
-    
-    const [movies, setMovies] = useState([])
-    const [resultat, setResultat] = useState([])
-    const [filter, setFilter] = useState('James Bond')
-    
-    const getMovies = async() => {
-        const response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=bed90b0b`)
-        const data = await response.json()
-        getMovies(data)
-        setResultat(movies?.filter(items => items?.source?.name === filter))
-    }
+export default function MovieCard({Title, Year, Poster, Id, Plot}){
 
-    console.log(resultat.hits)
-    
-    
-    return (
-        <article classname="movie-card">
-            <img src={img} alt={title} />
-            <h3>{title}</h3>
+return (
+        <>
+        <Link to={Id} >
+        <article className="movie-card">
+        <img src={Poster} alt={Title} />
+        <h3>{Title}</h3>
+        <p>{Year}{Plot}</p>
         </article>
+        </Link>
+        </>
+        
     )
 }
-
