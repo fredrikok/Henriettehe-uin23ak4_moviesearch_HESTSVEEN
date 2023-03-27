@@ -23,9 +23,9 @@ export default function MovieCards(){
     return (
         <>
         {resultat.length <= 10 ? resultat?.map((item, index) =>(
-                <MovieCard key={index} Poster={item.Poster} Title={item.Title} Year={item.Year} />
+                <MovieCard key={index} Id={item.imdbID} Poster={item.Poster} Title={item.Title} Year={item.Year} />
             )) : resultat?.map((item, index) =>(
-                <MovieCard key={index} Poster={item.Poster} Title={item.Title} Year={item.Year} />
+                <MovieCard key={index} Id={item.imdbID} Poster={item.Poster} Title={item.Title} Year={item.Year} />
             )) } 
         </> 
     )
