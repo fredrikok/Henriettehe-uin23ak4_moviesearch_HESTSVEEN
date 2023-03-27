@@ -13,8 +13,8 @@ export default function SearchResults({getMovies, setResultat}){
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="search" placeholder="Søk dine filmer her.." onChange={handleSearch} />
+        <form onSubmit={handleSubmit} >
+            <input type="search" placeholder="Søk dine filmer her.." onChange={handleSearch}  />
             <input type="submit" onClick={getMovies} value="Søk" />
         </form>
     )

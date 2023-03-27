@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import OneMovie from './pages/OneMovie';
 
-//import { Container, Row, Col } from 'react-boostrap';
 
 function App() { 
   return (
