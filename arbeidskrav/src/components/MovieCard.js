@@ -1,11 +1,11 @@
 
-export default function MovieCard({title, year, poster}){
+export default function MovieCard({Title, Year, Poster}){
 
 return (
         <article classname="movie-card">
-        <img src={poster} alt={title} />
-        <h3>{title}</h3>
-        <p>{year}</p>
+        <img src={Poster} alt={Title} />
+        <h3>{Title}</h3>
+        <p>{Year}</p>
         <a href="#">Les mer</a>
         </article>
     )

@@ -2,6 +2,7 @@ import './sass/main.scss';
 import Layout from './components/Layout';
 import MovieCards from './components/MovieCards';
 import React from 'react';
+import MovieCard from './components/MovieCard';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 //import { Container, Row, Col } from 'react-boostrap';
@@ -9,6 +10,7 @@ import React from 'react';
 function App() { 
   return (
      <Layout >
+      <MovieCard />
       <MovieCards />
      </Layout>
   );
