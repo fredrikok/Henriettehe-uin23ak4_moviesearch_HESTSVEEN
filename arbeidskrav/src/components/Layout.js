@@ -11,10 +11,10 @@ export default function Layout({children}){
     return (
         <>
          <header>
-                <h1>James Bond filmer:</h1> 
+                <h1>Filmer: </h1> 
           </header>
           <main className="content">
-                <p>HEllooooo Sebbbbbbb</p>
+                
                 {children}
           </main>
         </>
