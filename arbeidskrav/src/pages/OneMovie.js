@@ -24,10 +24,10 @@ export default function OneMovie() {
         <>
         <h3>{movies.Title}</h3>
         <img src={movies.Poster} alt={movies.Title} />
-        <p>Story: {movies.Plot}</p>
-        <p>Actors: {movies.Actors}</p>
-        <p>Released : {movies.Released}</p>
-        <p>Year: {movies.Year}</p>
+        <h4>Story:</h4> <p>{movies.Plot}</p>
+        <h4>Actors:</h4> <p>{movies.Actors}</p>
+        <h4>Released </h4> <p>{movies.Released}</p>
+        <h4>Year: </h4> <p>:{movies.Year}</p>
         </>
     )
 }
