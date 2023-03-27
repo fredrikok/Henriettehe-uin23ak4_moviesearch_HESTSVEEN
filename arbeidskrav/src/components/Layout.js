@@ -9,7 +9,7 @@ import MovieCards from "./MovieCards";
 import SearchResults from "./SearchResults";
 
 
-export default function Layout({children, setResultat, getMovies}){
+export default function Layout({setResultat, getMovies}){
     return (
         <>
          <header>
@@ -18,7 +18,6 @@ export default function Layout({children, setResultat, getMovies}){
           </header>
           <main className="content">
                 <MovieCards setResultat={setResultat} />
-                {children}
           </main>
         </>
          

@@ -9,7 +9,6 @@ export default function MovieCards(){
     const getMovies = async() => {
       const response = await fetch(`http://www.omdbapi.com/?s=${filter}&type=movie&apikey=bed90b0b`)
       const resultat = await response.json()
-      //setMovies(resultat)
       setResultat(resultat.Search)
 
       console.log(resultat.Search)
@@ -23,9 +22,9 @@ export default function MovieCards(){
     return (
         <>
         {resultat.length <= 10 ? resultat?.map((item, index) =>(
-                <MovieCard key={index} Id={item.imdbID} Poster={item.Poster} Title={item.Title} Year={item.Year} />
+                <MovieCard key={index} Id={item.imdbID} Poster={item.Poster} Title={item.Title} Plot= {item.Plot} Year={item.Year} />
             )) : resultat?.map((item, index) =>(
-                <MovieCard key={index} Id={item.imdbID} Poster={item.Poster} Title={item.Title} Year={item.Year} />
+                <MovieCard key={index} Id={item.imdbID} Poster={item.Poster} Title={item.Title} Plot= {item.Plot} Year={item.Year} />
             )) } 
         </> 
     )

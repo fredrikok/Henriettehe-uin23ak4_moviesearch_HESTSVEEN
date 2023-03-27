@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import MovieCard from "../components/MovieCard";
 
 export default function OneMovie() {
 
@@ -23,11 +22,11 @@ export default function OneMovie() {
 
     return(
         <>
-        <p>{movies.Title}</p>
-        <img src={movies.Poster} alt={movies.Title} />
         <h3>{movies.Title}</h3>
+        <img src={movies.Poster} alt={movies.Title} />
+        <p>{movies.Plot}</p>
         <p>{movies.Year}</p>
-        <a href="#">Les mer</a>
+        <a href={movies.id}>Les mer</a>
         </>
     )
 }

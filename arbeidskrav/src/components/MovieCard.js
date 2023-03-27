@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function MovieCard({Title, Year, Poster, Id}){
+export default function MovieCard({Title, Year, Poster, Id, Plot}){
 
 return (
         <>
@@ -8,7 +8,7 @@ return (
         <article className="movie-card">
         <img src={Poster} alt={Title} />
         <h3>{Title}</h3>
-        <p>{Year}</p>
+        <p>{Year}{Plot}</p>
         <a href="#">Les mer</a>
         </article>
         </Link>
