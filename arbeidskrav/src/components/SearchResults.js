@@ -1,6 +1,8 @@
 //Kilde handlesubmit: https://upmostly.com/tutorials/react-onchange-events-with-examples 
+import { Link } from "react-router-dom"
+import MovieCard from "./MovieCard"
 
-export default function SearchResults({getMovies, setResultat}){
+export default function SearchResults({Id, getMovies, setResultat}){
     
     const handleSubmit = (event) => {
         event.preventDefault()
