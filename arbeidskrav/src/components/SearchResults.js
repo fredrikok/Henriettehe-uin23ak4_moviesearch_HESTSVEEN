@@ -14,7 +14,7 @@ export default function Search({setResultat, getMovies}){
     return (
         <form onSubmit={handleSubmit}>
             <input type="search" placeholder="Søk etter film her.." onChange={handleSearch} />
-            <button type="submit" onClick={getMovies}><MagnifyingGlassIcon/></button>
+            <button type="submit" onClick={getMovies}></button>
         </form>
     )
 }
