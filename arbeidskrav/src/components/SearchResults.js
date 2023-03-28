@@ -1,5 +1,3 @@
-
-
 export default function Search({setResultat, getMovies}){
 
     const handleSubmit = (event) =>{
@@ -7,14 +5,16 @@ export default function Search({setResultat, getMovies}){
     }
 
     const handleSearch = (event) =>{
-        setResultat(event.target.value)
-        console.log(event.target.value)
+        if(event.target.value > 2){
+            setResultat(event.target.value)
+            console.log(event.target.value)
+        }
     }
     
     return (
         <form onSubmit={handleSubmit}>
             <input type="search" placeholder="Søk etter film her.." onChange={handleSearch} />
-            <button type="submit" onClick={getMovies}></button>
+            <input type="submit" onClick={getMovies} value="Søk"/>
         </form>
     )
 }
