@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
-export default function MovieCards(){
-    
+import Search from "./SearchResults";
+
+
+
+export default function MovieCards( ){ 
     const [resultat, setResultat] = useState([])
     const [filter, setFilter] = useState('James-Bond')
   
@@ -17,6 +20,7 @@ export default function MovieCards(){
     
     return (
         <>
+        <Search setFilter={setFilter} getMovies={getMovies}></Search>
         {resultat.length <= 10 ? resultat?.map((item, index) =>(
                 <MovieCard key={index} Id={item.imdbID} Poster={item.Poster} Title={item.Title} Plot={item.Plot} Actors={item.Actors} Released={item.Released} Year={item.Year} />
             )) : resultat?.map((item, index) =>(
