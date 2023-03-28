@@ -20,12 +20,16 @@ export default function MovieCards( ){
     
     return (
         <>
-        <Search setFilter={setFilter} getMovies={getMovies}></Search>
+        <header>
+            <Search setFilter={setFilter} getMovies={getMovies}></Search>
+        </header>
+        <div className="movielist">
         {resultat.length <= 10 ? resultat?.map((item, index) =>(
                 <MovieCard key={index} Id={item.imdbID} Poster={item.Poster} Title={item.Title} Plot={item.Plot} Actors={item.Actors} Released={item.Released} Year={item.Year} />
             )) : resultat?.map((item, index) =>(
                 <MovieCard key={index} Id={item.imdbID} Poster={item.Poster} Title={item.Title} Plot={item.Plot} Actors={item.Actors} Released={item.Released} Year={item.Year} />
             )) } 
+        </div>
         </> 
     )
     }

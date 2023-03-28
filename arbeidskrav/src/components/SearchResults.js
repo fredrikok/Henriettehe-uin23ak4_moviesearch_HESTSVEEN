@@ -9,6 +9,8 @@ export default function Search({setFilter, getMovies}){
     }
     
     return (
+    <section>
+        søk!
         <form onSubmit={handleSubmit}>
             <input 
             type="search" 
@@ -20,5 +22,6 @@ export default function Search({setFilter, getMovies}){
             onClick={getMovies} 
             value="Søk"/>
         </form>
+    </section>
     )
 }

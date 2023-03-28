@@ -1,0 +1,29 @@
+.movielist{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.movielist img{
+    width: 200px;
+    height: 300px;
+}
+
+.movielist p{
+    font-size: 10px;
+}
+.movielist h3{
+    font-size: 10px;
+
+}
+
+.movie-card{
+    width: 200px;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
