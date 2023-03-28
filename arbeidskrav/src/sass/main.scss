@@ -33,9 +33,17 @@ body{
    }
 
    .content {
+    display: flex; 
+    gap: 2rem;
+    flex-wrap: wrap;
 
     .movie-card{
         width: 100%;
+        flex-wrap: wrap;
+
+        img{
+            width: 100%;
+        }
         }
    
    }

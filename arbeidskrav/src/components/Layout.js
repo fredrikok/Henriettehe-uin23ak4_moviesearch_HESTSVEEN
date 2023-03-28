@@ -10,9 +10,11 @@ export default function Layout({setResultat, getMovies}){
                 <h1>Filmer: </h1> 
                 <SearchResults setResultat={setResultat} getMovies={getMovies} />
           </header>
+          
           <main className="content">
                 <MovieCards setResultat={setResultat} />
           </main>
+          
         </>
          
     )
