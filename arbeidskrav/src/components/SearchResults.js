@@ -1,16 +1,13 @@
-import { Link } from "react-router-dom"
-import MovieCard from "./MovieCard"
 
-import {MagnifyingGlassIcon} from '@heroicons/react/24/outline'
 
-export default function SearchResults({Id, getMovies, setResultat}){
-    
-    const handleSubmit = (event) => {
+export default function Search({setSearch, getMovies}){
+
+    const handleSubmit = (event) =>{
         event.preventDefault()
     }
 
     const handleSearch = (event) =>{
-        setSearch(event.target.value)
+        setResultat(event.target.value)
         console.log(event.target.value)
     }
     
@@ -18,7 +15,6 @@ export default function SearchResults({Id, getMovies, setResultat}){
         <form onSubmit={handleSubmit}>
             <input type="search" placeholder="Søk etter film her.." onChange={handleSearch} />
             <button type="submit" onClick={getMovies}><MagnifyingGlassIcon/></button>
-
         </form>
     )
 }

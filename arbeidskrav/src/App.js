@@ -1,11 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import './css/main.css';
-import Main from './components/Main';
+import './sass/main.scss';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import OneMovie from './pages/OneMovie';
 
-function App() {
+
+function App() { 
   return (
-    <Main />
+    <>
+    <Router>
+      <Routes >
+          <Route index element={<Home />} />
+          <Route path='/:id' element={<OneMovie />} />
+      </Routes>
+    </Router>
+    </>
+
   );
 }
 
