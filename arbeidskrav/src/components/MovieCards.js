@@ -21,7 +21,7 @@ export default function MovieCards( ){
     return (
         <>
         <header>
-            <Search setFilter={setFilter} getMovies={getMovies}></Search>
+            <Search setFilter={setFilter} filter={filter} getMovies={getMovies}></Search>
         </header>
         <div className="movielist">
         {resultat.length <= 10 ? resultat?.map((item, index) =>(

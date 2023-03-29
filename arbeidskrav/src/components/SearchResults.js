@@ -1,16 +1,26 @@
-export default function Search({setFilter, getMovies}){
+export default function Search({setFilter, filter, getMovies}){
 
     const handleSubmit = (event) =>{
         event.preventDefault()
     }
-
     const handleSearch = (event) =>{
         setFilter(event.target.value);
+        console.log(event.target.value)
+    }
+
+
+
+    const movieGet = (event) => {
+        setFilter(event)
+            getMovies()
     }
     
     return (
+
+    <>
+
     <section>
-        søk!
+        <h1>Filmer</h1>
         <form onSubmit={handleSubmit}>
             <input 
             type="search" 
@@ -23,5 +33,15 @@ export default function Search({setFilter, getMovies}){
             value="Søk"/>
         </form>
     </section>
+
+    <div>
+        <form onSubmit={handleSubmit}>
+            <input
+                value={filter}
+                onChange={(event) => setFilter(event.target.value)}
+            ></input>
+        </form>
+    </div>
+    </>
     )
 }
